@@ -332,6 +332,19 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                             ],
                           ),
                         ),
+                        Positioned.fill(
+                          child: Align(
+                            alignment: Alignment.bottomCenter,
+                            child: Container(
+                              height: MediaQuery.of(context).size.height * 0.4,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(
+                                      begin: Alignment.topCenter,
+                                      end: Alignment.bottomCenter,
+                                      colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                            ),
+                          ),
+                        ),
                       ]),
                     ),
                     onTap: () async {
