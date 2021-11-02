@@ -207,7 +207,8 @@ class _GroupedStoriesViewState extends State<GroupedStoriesView> {
             padding: const EdgeInsets.all(0.0),
             child: FloatingActionButton(
               onPressed: () {
-                _navigateBack();
+                // _navigateBack();
+                Navigator.pop(context);
               },
               child: widget.closeButtonIcon,
               backgroundColor: widget.closeButtonBackgroundColor,
