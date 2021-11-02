@@ -256,34 +256,59 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                     ),
                     onTap: () async {
                       _backStateAdditional = true;
-                      Navigator.push(
-                        context,
-                        NoAnimationMaterialPageRoute(
-                          builder: (context) => GroupedStoriesView(
-                            collectionDbName: widget.collectionDbName,
-                            languageCode: widget.languageCode,
-                            imageStoryDuration: widget.imageStoryDuration,
-                            progressPosition: widget.progressPosition,
-                            repeat: widget.repeat,
-                            inline: widget.inline,
-                            backgroundColorBetweenStories:
-                                widget.backgroundColorBetweenStories,
-                            closeButtonIcon: widget.closeButtonIcon,
-                            closeButtonBackgroundColor:
-                                widget.closeButtonBackgroundColor,
-                            sortingOrderDesc: widget.sortingOrderDesc,
-                            captionTextStyle: widget.captionTextStyle,
-                            captionPadding: widget.captionPadding,
-                            captionMargin: widget.captionMargin,
-                          ),
-                          settings: RouteSettings(
-                            arguments: StoriesListWithPressed(
-                                pressedStoryId: story.storyId,
-                                storiesIdsList: storiesIdsList),
-                          ),
+                      Navigator.of(context, rootNavigator: true).push(NoAnimationMaterialPageRoute(
+                        builder: (context) => GroupedStoriesView(
+                          collectionDbName: widget.collectionDbName,
+                          languageCode: widget.languageCode,
+                          imageStoryDuration: widget.imageStoryDuration,
+                          progressPosition: widget.progressPosition,
+                          repeat: widget.repeat,
+                          inline: widget.inline,
+                          backgroundColorBetweenStories:
+                          widget.backgroundColorBetweenStories,
+                          closeButtonIcon: widget.closeButtonIcon,
+                          closeButtonBackgroundColor:
+                          widget.closeButtonBackgroundColor,
+                          sortingOrderDesc: widget.sortingOrderDesc,
+                          captionTextStyle: widget.captionTextStyle,
+                          captionPadding: widget.captionPadding,
+                          captionMargin: widget.captionMargin,
                         ),
-//                        ModalRoute.withName('/'),
-                      );
+                        settings: RouteSettings(
+                          arguments: StoriesListWithPressed(
+                              pressedStoryId: story.storyId,
+                              storiesIdsList: storiesIdsList),
+                        ),
+                      ),);
+
+//                       Navigator.push(
+//                         context,
+//                         NoAnimationMaterialPageRoute(
+//                           builder: (context) => GroupedStoriesView(
+//                             collectionDbName: widget.collectionDbName,
+//                             languageCode: widget.languageCode,
+//                             imageStoryDuration: widget.imageStoryDuration,
+//                             progressPosition: widget.progressPosition,
+//                             repeat: widget.repeat,
+//                             inline: widget.inline,
+//                             backgroundColorBetweenStories:
+//                                 widget.backgroundColorBetweenStories,
+//                             closeButtonIcon: widget.closeButtonIcon,
+//                             closeButtonBackgroundColor:
+//                                 widget.closeButtonBackgroundColor,
+//                             sortingOrderDesc: widget.sortingOrderDesc,
+//                             captionTextStyle: widget.captionTextStyle,
+//                             captionPadding: widget.captionPadding,
+//                             captionMargin: widget.captionMargin,
+//                           ),
+//                           settings: RouteSettings(
+//                             arguments: StoriesListWithPressed(
+//                                 pressedStoryId: story.storyId,
+//                                 storiesIdsList: storiesIdsList),
+//                           ),
+//                         ),
+// //                        ModalRoute.withName('/'),
+//                       );
                     },
                   ),
                 );
@@ -347,34 +372,58 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                     ),
                     onTap: () async {
                       _backStateAdditional = true;
-                      Navigator.push(
-                        context,
-                        NoAnimationMaterialPageRoute(
-                          builder: (context) => GroupedStoriesView(
-                            collectionDbName: widget.collectionDbName,
-                            languageCode: widget.languageCode,
-                            imageStoryDuration: widget.imageStoryDuration,
-                            progressPosition: widget.progressPosition,
-                            repeat: widget.repeat,
-                            inline: widget.inline,
-                            backgroundColorBetweenStories:
-                                widget.backgroundColorBetweenStories,
-                            closeButtonIcon: widget.closeButtonIcon,
-                            closeButtonBackgroundColor:
-                                widget.closeButtonBackgroundColor,
-                            sortingOrderDesc: widget.sortingOrderDesc,
-                            captionTextStyle: widget.captionTextStyle,
-                            captionPadding: widget.captionPadding,
-                            captionMargin: widget.captionMargin,
-                          ),
-                          settings: RouteSettings(
-                            arguments: StoriesListWithPressed(
-                                pressedStoryId: story.storyId,
-                                storiesIdsList: storiesIdsList),
-                          ),
+                      Navigator.of(context, rootNavigator: true).push(NoAnimationMaterialPageRoute(
+                        builder: (context) => GroupedStoriesView(
+                          collectionDbName: widget.collectionDbName,
+                          languageCode: widget.languageCode,
+                          imageStoryDuration: widget.imageStoryDuration,
+                          progressPosition: widget.progressPosition,
+                          repeat: widget.repeat,
+                          inline: widget.inline,
+                          backgroundColorBetweenStories:
+                          widget.backgroundColorBetweenStories,
+                          closeButtonIcon: widget.closeButtonIcon,
+                          closeButtonBackgroundColor:
+                          widget.closeButtonBackgroundColor,
+                          sortingOrderDesc: widget.sortingOrderDesc,
+                          captionTextStyle: widget.captionTextStyle,
+                          captionPadding: widget.captionPadding,
+                          captionMargin: widget.captionMargin,
                         ),
-//                        ModalRoute.withName('/'),
-                      );
+                        settings: RouteSettings(
+                          arguments: StoriesListWithPressed(
+                              pressedStoryId: story.storyId,
+                              storiesIdsList: storiesIdsList),
+                        ),
+                      ),);
+//                       Navigator.push(
+//                         context,
+//                         NoAnimationMaterialPageRoute(
+//                           builder: (context) => GroupedStoriesView(
+//                             collectionDbName: widget.collectionDbName,
+//                             languageCode: widget.languageCode,
+//                             imageStoryDuration: widget.imageStoryDuration,
+//                             progressPosition: widget.progressPosition,
+//                             repeat: widget.repeat,
+//                             inline: widget.inline,
+//                             backgroundColorBetweenStories:
+//                                 widget.backgroundColorBetweenStories,
+//                             closeButtonIcon: widget.closeButtonIcon,
+//                             closeButtonBackgroundColor:
+//                                 widget.closeButtonBackgroundColor,
+//                             sortingOrderDesc: widget.sortingOrderDesc,
+//                             captionTextStyle: widget.captionTextStyle,
+//                             captionPadding: widget.captionPadding,
+//                             captionMargin: widget.captionMargin,
+//                           ),
+//                           settings: RouteSettings(
+//                             arguments: StoriesListWithPressed(
+//                                 pressedStoryId: story.storyId,
+//                                 storiesIdsList: storiesIdsList),
+//                           ),
+//                         ),
+// //                        ModalRoute.withName('/'),
+//                       );
                     },
                   ),
                 );
