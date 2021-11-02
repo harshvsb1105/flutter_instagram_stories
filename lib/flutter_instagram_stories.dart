@@ -220,8 +220,9 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                               ),
                             ),
                                 Container(
-                                  height: MediaQuery.of(context).size.height * 0.4,
+                                  height: MediaQuery.of(context).size.height * 0.2,
                                   decoration: BoxDecoration(
+                                      borderRadius: BorderRadius.circular(20.0),
                                       gradient: LinearGradient(
                                           begin: Alignment.topCenter,
                                           end: Alignment.bottomCenter,
@@ -309,8 +310,9 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                           ),
                         ),
                         Container(
-                          height: MediaQuery.of(context).size.height * 0.4,
+                          height: MediaQuery.of(context).size.height * 0.2,
                           decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(20.0),
                               gradient: LinearGradient(
                                   begin: Alignment.topCenter,
                                   end: Alignment.bottomCenter,
