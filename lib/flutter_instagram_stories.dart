@@ -317,7 +317,7 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                           child: Container(
                             height: MediaQuery.of(context).size.height * 0.2,
                             decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(20.0),
+                              borderRadius: BorderRadius.only(bottomRight: Radius.circular(20),bottomLeft: Radius.circular(20)),
                                 gradient: LinearGradient(
                                     begin: Alignment.topCenter,
                                     end: Alignment.bottomCenter,
