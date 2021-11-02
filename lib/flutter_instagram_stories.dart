@@ -219,14 +219,17 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                     Icon(Icons.error),
                               ),
                             ),
-                                Container(
-                                  height: double.infinity,
-                                  decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(20.0),
-                                      gradient: LinearGradient(
-                                          begin: Alignment.topCenter,
-                                          end: Alignment.bottomCenter,
-                                          colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                                Align(
+                                  alignment: Alignment.bottomCenter,
+                                  child: Container(
+                                    height: MediaQuery.of(context).size.height * 0.2,
+                                    decoration: BoxDecoration(
+                                        borderRadius: BorderRadius.circular(20.0),
+                                        gradient: LinearGradient(
+                                            begin: Alignment.topCenter,
+                                            end: Alignment.bottomCenter,
+                                            colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                                  ),
                                 ),
                             Container(
                               width: widget.iconWidth,
@@ -309,14 +312,17 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                 Icon(Icons.error),
                           ),
                         ),
-                        Container(
-                          height: double.infinity,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(20.0),
-                              gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                        Align(
+                          alignment: Alignment.bottomCenter,
+                          child: Container(
+                            height: MediaQuery.of(context).size.height * 0.2,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(20.0),
+                                gradient: LinearGradient(
+                                    begin: Alignment.topCenter,
+                                    end: Alignment.bottomCenter,
+                                    colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                          ),
                         ),
                         Container(
                           width: widget.iconWidth,
