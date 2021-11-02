@@ -232,7 +232,7 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                     child: Text(
                                       story.previewTitle![widget.languageCode]!,
                                       style: widget.iconTextStyle,
-                                      textAlign: TextAlign.left,
+                                      textAlign: TextAlign.center,
                                     ),
                                   ),
                                 ],
@@ -326,7 +326,7 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                 child: Text(
                                   story.previewTitle![widget.languageCode]!,
                                   style: widget.iconTextStyle,
-                                  textAlign: TextAlign.left,
+                                  textAlign: TextAlign.center,
                                 ),
                               ),
                             ],
