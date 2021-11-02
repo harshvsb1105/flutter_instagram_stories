@@ -219,6 +219,14 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                     Icon(Icons.error),
                               ),
                             ),
+                                Container(
+                                  height: MediaQuery.of(context).size.height * 0.4,
+                                  decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                          begin: Alignment.topCenter,
+                                          end: Alignment.bottomCenter,
+                                          colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                                ),
                             Container(
                               width: widget.iconWidth,
                               height: widget.iconHeight,
@@ -232,25 +240,12 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                     child: Text(
                                       story.previewTitle![widget.languageCode]!,
                                       style: widget.iconTextStyle,
-                                      textAlign: TextAlign.center,
+                                      textAlign: TextAlign.left,
                                     ),
                                   ),
                                 ],
                               ),
                             ),
-                                Positioned.fill(
-                                  child: Align(
-                                    alignment: Alignment.bottomCenter,
-                                    child: Container(
-                                      height: MediaQuery.of(context).size.height * 0.4,
-                                      decoration: BoxDecoration(
-                                          gradient: LinearGradient(
-                                              begin: Alignment.topCenter,
-                                              end: Alignment.bottomCenter,
-                                              colors: [Colors.transparent, Color(0xff2F2F2F)])),
-                                    ),
-                                  ),
-                                ),
                           ]),
                         ),
                       ),
@@ -314,6 +309,14 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                           ),
                         ),
                         Container(
+                          height: MediaQuery.of(context).size.height * 0.4,
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                  begin: Alignment.topCenter,
+                                  end: Alignment.bottomCenter,
+                                  colors: [Colors.transparent, Color(0xff2F2F2F)])),
+                        ),
+                        Container(
                           width: widget.iconWidth,
                           height: widget.iconHeight,
                           child: Column(
@@ -326,23 +329,10 @@ class _FlutterInstagramStoriesState extends State<FlutterInstagramStories> {
                                 child: Text(
                                   story.previewTitle![widget.languageCode]!,
                                   style: widget.iconTextStyle,
-                                  textAlign: TextAlign.center,
+                                  textAlign: TextAlign.left,
                                 ),
                               ),
                             ],
-                          ),
-                        ),
-                        Positioned.fill(
-                          child: Align(
-                            alignment: Alignment.bottomCenter,
-                            child: Container(
-                              height: MediaQuery.of(context).size.height * 0.4,
-                              decoration: BoxDecoration(
-                                  gradient: LinearGradient(
-                                      begin: Alignment.topCenter,
-                                      end: Alignment.bottomCenter,
-                                      colors: [Colors.transparent, Color(0xff2F2F2F)])),
-                            ),
                           ),
                         ),
                       ]),
